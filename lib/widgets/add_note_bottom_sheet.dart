@@ -6,6 +6,12 @@ class AddNoteBottomSheet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(children: [SizedBox(height: 30), CustomTextFiled()]);
+    return Column(
+      children: [
+        SizedBox(height: 30),
+        CustomTextFiled(hintText: 'Titel'),
+        CustomTextFiled(hintText: 'content', maxline: 6),
+      ],
+    );
   }
 }

@@ -2,7 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:notes_app/constants.dart';
 
 class CustomTextFiled extends StatelessWidget {
-  const CustomTextFiled({super.key});
+  const CustomTextFiled({super.key, this.maxline = 1, required this.hintText});
+
+  final String? hintText;
+  final int? maxline;
 
   @override
   Widget build(BuildContext context) {
@@ -10,13 +13,14 @@ class CustomTextFiled extends StatelessWidget {
       padding: const EdgeInsets.all(8.0),
       child: TextField(
         cursorColor: kprimarycolor,
+        maxLines: maxline,
+
         decoration: InputDecoration(
-          contentPadding: EdgeInsets.symmetric(vertical: 20, horizontal: 16),
           border: buildBorder(),
           enabledBorder: buildBorder(),
           focusedBorder: buildBorder(Color: kprimarycolor),
-          hintText: 'titel',
-          hintStyle: TextStyle(fontSize: 20, color: kprimarycolor),
+          hintText: hintText,
+          hintStyle: const TextStyle(fontSize: 20, color: kprimarycolor),
         ),
       ),
     );
