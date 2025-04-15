@@ -25,7 +25,7 @@ class NoteItem extends StatelessWidget {
               child: const Text(
                 'build your with create tharwar samy',
                 style: TextStyle(
-                  color: const Color.fromARGB(153, 46, 48, 49),
+                  color: Color.fromARGB(153, 46, 48, 49),
                   fontSize: 20,
                 ),
               ),
