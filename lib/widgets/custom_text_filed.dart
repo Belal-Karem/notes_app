@@ -9,19 +9,16 @@ class CustomTextFiled extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(8.0),
-      child: TextField(
-        cursorColor: kprimarycolor,
-        maxLines: maxline,
+    return TextField(
+      cursorColor: kprimarycolor,
+      maxLines: maxline,
 
-        decoration: InputDecoration(
-          border: buildBorder(),
-          enabledBorder: buildBorder(),
-          focusedBorder: buildBorder(Color: kprimarycolor),
-          hintText: hintText,
-          hintStyle: const TextStyle(fontSize: 20, color: kprimarycolor),
-        ),
+      decoration: InputDecoration(
+        border: buildBorder(),
+        enabledBorder: buildBorder(),
+        focusedBorder: buildBorder(Color: kprimarycolor),
+        hintText: hintText,
+        hintStyle: const TextStyle(fontSize: 20, color: kprimarycolor),
       ),
     );
   }
