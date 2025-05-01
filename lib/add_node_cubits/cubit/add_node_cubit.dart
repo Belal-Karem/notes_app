@@ -5,4 +5,6 @@ part 'add_node_state.dart';
 
 class AddNodeCubit extends Cubit<AddNodeState> {
   AddNodeCubit() : super(AddNodeInitial());
+
+  void addNote() {}
 }
