@@ -25,4 +25,10 @@ class SimpleBlocObserver extends BlocObserver {
     super.onTransition(bloc, transition);
     // TODO: implement onChange
   }
+
+  @override
+  void onCreate(BlocBase bloc) {
+    debugPrint('create = $bloc');
+    super.onCreate(bloc);
+  }
 }
