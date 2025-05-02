@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:notes_app/model/note_model.dart';
 import 'package:notes_app/views/edit_note_view.dart';
 
 class NoteItem extends StatelessWidget {
-  const NoteItem({super.key});
+  const NoteItem({super.key, required this.note});
 
+  final NoteModel note;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -21,22 +23,22 @@ class NoteItem extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.only(top: 24, bottom: 24),
         decoration: BoxDecoration(
-          color: Colors.amber,
+          color: Color(note.color),
           borderRadius: BorderRadius.circular(16),
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
             ListTile(
-              title: const Text(
-                'flutter tinps',
-                style: TextStyle(color: Colors.black, fontSize: 25),
+              title: Text(
+                note.title,
+                style: const TextStyle(color: Colors.black, fontSize: 25),
               ),
               subtitle: Padding(
                 padding: const EdgeInsets.symmetric(vertical: 16),
-                child: const Text(
-                  'build your with create tharwar samy',
-                  style: TextStyle(
+                child: Text(
+                  note.subtitle,
+                  style: const TextStyle(
                     color: Color.fromARGB(153, 46, 48, 49),
                     fontSize: 20,
                   ),
@@ -51,8 +53,10 @@ class NoteItem extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(right: 24),
               child: Text(
-                'may21 ,2024',
-                style: TextStyle(color: const Color.fromARGB(153, 46, 48, 49)),
+                note.date,
+                style: const TextStyle(
+                  color: const Color.fromARGB(153, 46, 48, 49),
+                ),
               ),
             ),
           ],
