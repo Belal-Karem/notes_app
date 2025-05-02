@@ -31,4 +31,10 @@ class SimpleBlocObserver extends BlocObserver {
     debugPrint('create = $bloc');
     super.onCreate(bloc);
   }
+
+  @override
+  void onClose(BlocBase bloc) {
+    debugPrint('close =$bloc');
+    super.onClose(bloc);
+  }
 }
