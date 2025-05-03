@@ -52,7 +52,7 @@ class _addnoteformState extends State<addnoteform> {
 
                     var currentData = DateTime.now();
                     var formattedCurrentDate = DateFormat(
-                      'dd-mm-yyy',
+                      'dd-MM-yyyy',
                     ).format(currentData);
                     var noteModal = NoteModel(
                       title: title!,
