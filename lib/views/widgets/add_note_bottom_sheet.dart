@@ -4,7 +4,6 @@ import 'package:notes_app/add_note_cubits/cubit/add_note_cubit.dart';
 import 'package:notes_app/helper/show_snack_bar.dart';
 import 'package:notes_app/note_cubit/cubit/notes_cubit.dart';
 import 'package:notes_app/views/widgets/ScrollViewToAddNote.dart';
-import 'package:notes_app/views/widgets/add_note_form.dart';
 
 class AddNoteBottomSheet extends StatelessWidget {
   const AddNoteBottomSheet({super.key});
