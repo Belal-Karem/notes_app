@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:notes_app/add_note_cubits/cubit/add_note_cubit.dart';
 import 'package:notes_app/helper/show_snack_bar.dart';
 import 'package:notes_app/note_cubit/cubit/notes_cubit.dart';
+import 'package:notes_app/views/widgets/ScrollViewToAddNote.dart';
 import 'package:notes_app/views/widgets/add_note_form.dart';
 
 class AddNoteBottomSheet extends StatelessWidget {
@@ -23,16 +24,8 @@ class AddNoteBottomSheet extends StatelessWidget {
           }
         },
         builder: (context, state) {
-          return AbsorbPointer(
+          return ScrollViewToAddNote(
             absorbing: state is AddNoteLoding ? true : false,
-            child: Padding(
-              padding: EdgeInsets.only(
-                left: 12,
-                right: 16,
-                bottom: MediaQuery.of(context).viewInsets.bottom,
-              ),
-              child: const SingleChildScrollView(child: const addnoteform()),
-            ),
           );
         },
       ),
