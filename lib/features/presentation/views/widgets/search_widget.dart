@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:notes_app/views/widgets/text_form_field_to_search.dart';
-import 'package:notes_app/views/widgets/text_on_tap.dart';
+import 'package:notes_app/features/presentation/views/widgets/text_form_field_to_search.dart';
+import 'package:notes_app/features/presentation/views/widgets/text_on_tap.dart';
 
-import '../../note_cubit/cubit/notes_cubit.dart';
+import '../../manager/note_cubit/cubit/notes_cubit.dart';
 
 class SearchWidget extends StatefulWidget {
   const SearchWidget({super.key});

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:notes_app/views/widgets/custom_search_icon.dart';
-import 'package:notes_app/views/widgets/search_widget.dart';
+import 'package:notes_app/features/presentation/views/widgets/custom_icon.dart';
+import 'package:notes_app/features/presentation/views/widgets/search_widget.dart';
 
 class TextOnTap extends StatelessWidget {
   const TextOnTap({super.key, required this.widget, this.onTap});

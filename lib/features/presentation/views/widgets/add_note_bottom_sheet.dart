@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:notes_app/add_note_cubits/cubit/add_note_cubit.dart';
-import 'package:notes_app/helper/show_snack_bar.dart';
-import 'package:notes_app/note_cubit/cubit/notes_cubit.dart';
-import 'package:notes_app/views/widgets/ScrollViewToAddNote.dart';
+import 'package:notes_app/features/presentation/manager/add_note_cubits/cubit/add_note_cubit.dart';
+import 'package:notes_app/core/helper/show_snack_bar.dart';
+import 'package:notes_app/features/presentation/manager/note_cubit/cubit/notes_cubit.dart';
+import 'package:notes_app/features/presentation/views/widgets/ScrollViewToAddNote.dart';
 
 class AddNoteBottomSheet extends StatelessWidget {
   const AddNoteBottomSheet({super.key});

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:notes_app/views/widgets/add_note_form.dart';
+import 'package:notes_app/features/presentation/views/widgets/add_note_form.dart';
 
 class ScrollViewToAddNote extends StatelessWidget {
   const ScrollViewToAddNote({super.key, required this.absorbing});
